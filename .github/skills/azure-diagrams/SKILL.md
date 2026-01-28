@@ -13,6 +13,35 @@ metadata:
 
 A comprehensive technical diagramming toolkit for solutions architects, presales engineers, and developers. Generate professional diagrams for proposals, documentation, and architecture reviews.
 
+## ⚡ Execution Method
+
+**Always execute diagram code inline** - do not create a separate .py file:
+```bash
+python3 << 'EOF'
+from diagrams import Diagram, Cluster
+from diagrams.azure.compute import AKS
+from diagrams.azure.database import CosmosDb
+
+with Diagram("My Architecture", filename="/mnt/user-data/outputs/diagram", show=False):
+    AKS("aks-prod") >> CosmosDb("cosmos-prod")
+
+EOF
+```
+
+This approach:
+- ✅ Generates the diagram directly
+- ✅ No temporary .py files left on disk
+- ✅ Cleaner workflow
+
+**Do NOT do this:**
+```bash
+# ❌ Don't create a file first
+cat > diagram.py << 'EOF'
+...
+EOF
+python3 diagram.py  # Leaves diagram.py behind
+```
+
 ## 📊 Diagram Types
 
 | Type | Reference File | Example Prompt |
