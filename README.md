@@ -55,27 +55,38 @@ Official Microsoft icons for all Azure services:
 ### Prerequisites
 ```bash
 pip install diagrams matplotlib
-apt-get install graphviz  # or: brew install graphviz (macOS)
-```
-
-### For GitHub Copilot
-
-Copy the skill folder to your repository:
-```bash
-cp -r .github/skills/azure-diagrams YOUR_REPO/.github/skills/
+apt-get install graphviz  # or: brew install graphviz (macOS) / choco install graphviz (Windows)
 ```
 
 ### For Claude Code CLI
 
-Install directly from GitHub:
+**Option 1: Using agr (Recommended)**
 ```bash
-claude install github:cmb211087/azure-diagrams-skill
+pip install agr
+agr add cmb211087/azure-diagrams-skill/azure-diagrams
 ```
 
-Or install from a local folder:
+**Option 2: Manual Installation**
 ```bash
-claude install ./path/to/azure-diagrams
+# Clone and copy to personal skills
+git clone https://github.com/cmb211087/azure-diagrams-skill.git
+cp -r azure-diagrams-skill/skills/azure-diagrams ~/.claude/skills/
+
+# Or copy to a specific project
+cp -r azure-diagrams-skill/skills/azure-diagrams YOUR_PROJECT/.claude/skills/
 ```
+
+### For GitHub Copilot
+```bash
+# Copy to your repository
+cp -r azure-diagrams-skill/skills/azure-diagrams YOUR_REPO/.github/skills/
+# OR
+cp -r azure-diagrams-skill/skills/azure-diagrams YOUR_REPO/.claude/skills/
+```
+
+### For Cursor / Other Agent Skills Tools
+
+Copy to your project's `.claude/skills/` directory - most Agent Skills compatible tools scan this path.
 
 ### For Claude.ai
 
@@ -84,7 +95,7 @@ Upload the skill folder to a Claude Project, or simply share the GitHub link and
 ### Verify Installation
 ```bash
 # Check prerequisites are installed
-python -c "import diagrams; print('✓ diagrams installed')"
+python -c "import diagrams; print('diagrams installed')"
 dot -V  # Should show graphviz version
 ```
 
@@ -166,8 +177,9 @@ Supports: **Bicep** • **Terraform** • **ARM Templates** • **Azure Pipeline
 ##  What's Included
 
 ```
-azure-diagrams/
+skills/azure-diagrams/
 ├── SKILL.md                              # Main skill instructions
+├── README.md                             # Skill documentation
 ├── references/
 │   ├── azure-components.md               # 700+ Azure components
 │   ├── common-patterns.md                # Architecture patterns
